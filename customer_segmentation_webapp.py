@@ -13,7 +13,7 @@ loaded_model=pickle.load(open("customer_trained.sav","rb"))
 
 #creating prediction
 
-def customer_predtiction(input_data):
+def customer_prediction(input_data):
     
     #numpy_array=np.asarray(input_data)
     
@@ -51,7 +51,7 @@ def main():
     customers=[]
     
     if st.button('Customer Segmentation'):
-        customers = customer_predtiction(list)
+        customers = customer_prediction(list)
         
     st.success(customers)
         
